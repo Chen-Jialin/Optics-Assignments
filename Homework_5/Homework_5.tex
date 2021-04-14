@@ -1,0 +1,206 @@
+%Optics Homework_5
+\documentclass[10pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{光学作业\#5}
+\author{陈稼霖 \and 45875852}
+\date{2018.11.22}
+\begin{document}
+\maketitle
+\section*{3-23}
+\subsection*{（1）}解：
+$M_1$移动的距离为
+\[
+\Delta h = N\frac{\lambda}{2} = 2.9465\mu m
+\]
+\subsection*{（2）}解：
+设开始时中心亮斑的干涉级为$k$，视场角范围为$\theta$。移动平面镜前，视场中心亮环对应的光程差为
+\[
+\Delta L_0 = 2h = k\lambda
+\]
+视场边缘亮环对应的级数为$(k-12)$，光程差为
+\[
+\Delta L_1 = 2h\cos\theta = (k-12)\lambda
+\]
+移动平面镜后，视场边缘亮环对应的级数为$(k-10-15)$，光程差为
+\[
+\Delta L_2 = 2(h-\Delta h)\cos\theta = (k-10-5)\lambda
+\]
+以上三式联立解得
+\[
+k = \frac{24\Delta h}{2\Delta h-3\lambda} \approx 17
+\]
+故开始时中心亮斑的干涉级为$17$。
+\subsection*{（3）}解：$M_1$移动后，从中心向外数第$5$个亮环的干涉级为$k-10-5 \approx 2$。
+\section*{3-25}解：
+干涉条纹由最清晰到最模糊的过程中光程差的变化值为
+\[
+\Delta L= \frac{\lambda^2}{2\Delta\lambda} = N\lambda
+\]
+解得钠双线的两个波长之差为
+\[
+\Delta\lambda = \frac{\lambda}{2N} = 0.6nm
+\]
+故钠双线的两个波长分别为
+\begin{align*}
+&\lambda_1 = \lambda+\frac{\Delta \lambda}{2} = 589.6nm\\
+&\lambda_2 = \lambda-\frac{\Delta \lambda}{2} = 589.0nm
+\end{align*}
+\section*{3-27}解：
+这台仪器测长精度为
+\[
+\delta l = \delta N\frac{\lambda}{2} = 32nm
+\]
+一次测长量程即空间相干长度的二分之一，为
+\[
+L = \frac{\lambda^2}{2\Delta\lambda} = 2.00m
+\]
+\section*{3-28}
+\subsection*{（1）}解：
+迈克尔逊干涉仪的吞（吐）一圈条纹镜面所要移动的距离为
+\[
+l = \frac{\lambda}{2}
+\]
+电信号的周期即为镜面移动以上距离所需的时间
+\[
+T = \frac{1}{\nu} = \frac{l}{v} = \frac{\lambda}{2v}
+\]
+解得入射光的波长为
+\[
+\lambda = \frac{2v}{\nu}
+\]
+\subsection*{（2）}解：
+反射镜平移的速度为
+\[
+v = \frac{\lambda\nu}{2} = 15\mu m/s
+\]
+\subsection*{（3）}解：
+钠黄光双线的电信号频率分别为
+\begin{align*}
+&\nu_1 = \frac{2v}{\lambda_1}\\
+&\nu_2 = \frac{2v}{\lambda_2}
+\end{align*}
+产生的电信号的拍频为
+\[
+\Delta\nu = \nu_1 - \nu_2 = 2v(\frac{1}{\lambda_2} - \frac{1}{\lambda_2}) \approx \frac{2v\Delta\lambda}{\lambda^2}
+\]
+代入$\Delta\lambda = \lambda_1-\lambda_2 = 0.6nm, \lambda = \frac{\lambda_1+\lambda_2}{2} = 589.3nm$，解得电信号拍频为
+\[
+\Delta\nu = 5.2\times10^{-2}Hz
+\]
+\section*{3-29}解：
+法布里-珀罗干涉仪的色分辨本领为
+\[
+\frac{\lambda}{\delta\lambda} = \pi k\frac{\sqrt{R}}{1-R}
+\]
+干涉级数和间距之间的关系为
+\[
+2nh = k\lambda
+\]
+以上两式联立解得所需间隔$h$为
+\[
+h = \frac{1-R}{2n\pi\sqrt{R}}\frac{\lambda^2}{\delta\lambda} = 2.94cm
+\]
+\section*{3-31}
+\subsection*{（1）}解：
+干涉级数和间距之间的关系为
+\[
+2nh\cos\theta = k\lambda
+\]
+中心处$\cos\theta = 1$，解得中心干涉级数为
+\[
+k = \frac{2nh}{\lambda} \approx 1.7\times10^5
+\]
+\subsection*{（2）}解：
+在倾角为$1^\circ$附近干涉环的半角宽度为
+\[
+|\Delta i| = \frac{\lambda}{2\pi nh\sin i}\frac{1-R}{\sqrt{R}} = 2.2\times10^{-6}rad = 0.45''
+\]
+\subsection*{（3）}解：
+该法-珀腔分辨谱线可分辨的最小波长间隔为
+\[
+\delta\lambda = \frac{\lambda}{\pi k}\frac{1-R}{\sqrt{R}} = \frac{\lambda^2}{2n\pi h}\frac{1-R}{\sqrt{R}} = 2.3\times10^{-14}m = 2.3\times10^{-5}nm
+\]
+色分辨本领为
+\[
+\frac{\lambda}{\delta\lambda} = 2.6\times10^7
+\]
+\subsection*{（4）}解：
+法-珀腔透射率公式为
+\[
+\eta_T = \frac{1}{1+\frac{4R\sin^2(\delta/2)}{(1-R)^2}}
+\]
+其中相邻光线之间的相位差为
+\[
+\delta = \frac{4\pi nh}{\lambda}
+\]
+透射率达到峰值的条件为
+\[
+\frac{2\pi nh}{\lambda} = k\pi, ~~~~k = \pm1,\pm2,...
+\]
+解得透射率达到峰值的光线波长为
+\[
+\lambda = \frac{2nh}{k}
+\]
+可见光波长范围为$[400nm, 760nm]$，其对应的干涉级数满足
+\[
+400nm < \frac{2nh}{k} < 760nm
+\]
+解得干涉级数范围
+\[
+1.3\times10^5 < k < 2.5\times10^5
+\]
+故透射最强的谱线有$2.5\times10^5 - 1.3\times10^5 = 1.2\times10^5$条。每条谱线宽度为
+\[
+\Delta\lambda_k = \frac{\lambda}{\pi k}\frac{1-R}{\sqrt{R}}
+\]
+代入中间波长$\lambda = \frac{400 + 760}{2}nm = 580nm$，中间谱线级数$k = 1.9\times10^5$，解得每条谱线宽度为
+\[
+\Delta\lambda = 1.9\times10^{-14}m = 1.9\times10^{-5}nm
+\]
+\subsection*{（5）}解：
+对谱线波长公式
+\[
+\lambda = \frac{2nh}{k}
+\]
+两边取微分再除以原式得到得
+\[
+\frac{\delta\lambda}{\lambda} = \frac{\delta h}{h} = 10^{-5}
+\]
+故谱线漂移量（相对值）与腔长改变量（相对值）相等，为$10^{-5}$。
+\section*{3-32}
+\subsection*{（1）}
+透射谱线波长公式为
+\[
+\lambda = \frac{2nh}{k}
+\]
+可见光波长范围为$[400nm, 760nm]$，其对应的干涉级数满足
+\[
+400nm < \frac{2nh}{k} < 760nm
+\]
+解得干涉级数范围
+\[
+1.6 < k < 3.1
+\]
+故在可见光范围内，透射最强的谱线有2条。
+\subsection*{（2）}解：
+对于第$k=2$级谱线，其波长为
+\[
+\lambda_2 = \frac{2nh}{2} = 620nm
+\]
+其谱线宽度为
+\[
+\Delta\lambda_2 = \frac{\lambda_2}{2\pi}\frac{1-R}{\sqrt{R}} = 4.03nm
+\]
+对于第$k=3$级谱线，其波长为
+\[
+\lambda_3 = \frac{2nh}{3} = 413nm
+\]
+其谱线宽度为
+\[
+\Delta\lambda_3 = \frac{\lambda_3}{3\pi}\frac{1-R}{\sqrt{R}} = 1.79nm
+\]
+\end{document}
